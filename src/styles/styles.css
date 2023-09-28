@@ -1,0 +1,47 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-image: url("/src/images/0c6d2328bec650452bcbd9aaa63bc621.jpg");
+
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.header h1 {
+    max-width: 780px;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.header article {
+    display:flex ;
+    flex-direction: column;
+
+}
+
+.lista li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 40px;
+    font-size: 36px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color:#f7efef ;
+    bottom: 0px;
+    top: none;
+    
+
+}
