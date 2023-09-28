@@ -6,13 +6,19 @@
 
 .header {
     display: flex;
-    flex-direction: row;
-    background-image: url("/src/images/0c6d2328bec650452bcbd9aaa63bc621.jpg");
-
+    flex-direction: column;
+    background-image: url("/src/images/c2dcd7679c38ba2ca294da097c2f4faf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     height: 500px;
+    
+}
+
+.header h1 {
+    position: absolute;
 }
 
 .header h1 {
@@ -22,10 +28,12 @@
     color: white;
 }
 
-.header article {
-    display:flex ;
-    flex-direction: column;
-
+.profile-image img {
+    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+    margin-top: 450px;
+    
 }
 
 .lista li {
