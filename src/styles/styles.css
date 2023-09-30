@@ -1,38 +1,63 @@
+/* Fuentes para la página*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
+body{
+    margin: 0;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    background-image: url("/src/images/c2dcd7679c38ba2ca294da097c2f4faf.jpg");
+    background-image: url("/src/images/desing-css.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
+    background-size: auto;
     align-items: center;
     justify-content: center;
     height: 500px;
+    width: 100%;
+    
     
 }
 
-.header h1 {
-    position: absolute;
-}
+
 
 .header h1 {
     max-width: 780px;
     font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', 'serif';
+    background-color: #E3BD66;
     color: white;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+
+    
+}
+
+.autor {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18;
+    font-weight: bold;
 }
 
 .profile-image img {
-    border-radius: 200px;
+    border: 5px solid red;
+    border-color: red;
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-top: 450px;
+    margin-top: 500px;
+    
     
 }
 
@@ -40,6 +65,10 @@
     list-style-type: decimal;
     list-style-position: outside;
     padding-left: 40px;
+    font-size: 36px;
+}
+
+.titulo {
     font-size: 36px;
 }
 
@@ -52,4 +81,30 @@
     top: none;
     
 
+}
+
+.webpage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 60px 100px 100px;
+    
+}
+
+/* responsive*/
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem; /* Reduzco el tamaño del texto en pantallas pequeñas */
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .lista li {
+        font-size: 1rem; /* Reduzco el tamaño del texto en pantallas pequeñas */
+    }
 }
