@@ -1,4 +1,6 @@
 /* Fuentes para la página*/
+/* Nota: La fuente Source Sans Pro como tal no la haye y en su lugar ópte por poner el Source Sans 3, el cual es similar.
+*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,700;1,400&display=swap');
 
 
@@ -11,66 +13,114 @@ body{
 .main-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
 
-.header {
+.header-container { 
     display: flex;
-    flex-direction: column;
-    background-image: url("/src/images/desing-css.png");
-    background-repeat: no-repeat;
-    background-size: auto;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    height: 500px;
-    width: 100%;
-    
-    
 }
 
+.background-header {
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("/src/images/desing-css.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    position: top;
+}
 
-
-.header h1 {
+.main-title{
     max-width: 780px;
     font-size: 36px;
     font-family: 'Roboto Slab', 'serif';
     background-color: #E3BD66;
     color: white;
-    position: absolute;
     padding: 10px 10px 10px 10px;
-
-    
 }
 
-.autor {
+.profile-image {
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+
+.profile-text{
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 18;
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    color: rgb(51,51,51);
+    line-height: 24px;
+    border-bottom: 2px solid #e6e6e6;
 }
 
-.profile-image img {
-    border: 5px solid red;
-    border-color: red;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-top: 500px;
-    
-    
-}
-
-.lista li {
-    list-style-type: decimal;
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 36px;
+.webpage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 66.67%;
+    margin-top: 60px ;
+    margin-left: 16.6%;
+ 
 }
 
 .titulo {
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 36px;
+    font-weight: bold;
+    color: rgba(51,51,51);
 }
+
+.titulo-secundario {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(51,51,51);
+    display: inline;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #E3BD66;
+}
+
+.text-framework{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51,51,51);
+    text-align: justify;
+}
+
+.imagen-framework{
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.25);
+    width: 100%;
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.imagen-framework:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.number-item  {
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 40px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 36px;
+    color: rgba(0,0,0,0.25);
+    margin-bottom: 120px;
+}
+
+
 
 
 .footer {
@@ -83,14 +133,48 @@ body{
 
 }
 
-.webpage-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    margin: 60px 100px 100px;
-    
+
+
+.link-text {
+    text-decoration: none;
+    color: #42b4d6;
+}
+.link-text:hover {
+    text-decoration: underline;
+    color: #2b829c;
+}
+
+/* Iconos de los frameworks*/
+.icon-foundation {
+    width: 150px;
+    height: 150px;
+    background-image: url("/src/images/icons/foundation-icon.svg");
+    background-size: cover;
+}
+
+.icon-boostrap {
+    width: 150px;
+    height: 150px;
+    background-image: url("/src/images/icons/boostrap-icon.svg");
+    background-size: cover;
+}
+.icon-tailwind {
+    width: 150px;
+    height: 150px;
+    background-image: url("/src/images/icons/tailwind-icon.svg");
+    background-size: cover;
+}
+.icon-bulma {
+    width: 150px;
+    height: 150px;
+    background-image: url("/src/images/icons/bulma-icon.svg");
+    background-size: cover;
+}
+.icon-materialize {
+    width: 150px;
+    height: 150px;
+    background-image: url("/src/images/icons/materialize-icon.svg");
+    background-size: cover;
 }
 
 /* responsive*/
