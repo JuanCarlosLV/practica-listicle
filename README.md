@@ -34,5 +34,7 @@ Puedes saber cuantó te queda por leer debido al numero en el titular
 * Git
 ## Página Listicle
 ### Screenshoot de la página listicle :
-[Webite](/screenshot-website.PNG)
+Website:
+![screenshot-website](https://github.com/JuanCarlosLV/practica-listicle/assets/80495307/db1859f7-44db-4d92-a1f4-d311471dcb01)
+
 Link de la página: 
