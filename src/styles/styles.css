@@ -133,9 +133,28 @@ body{
 
 /*Footer section*/
 .footer {
-    background-color:#030303 ;
-    height: 100px;
+    background-color: #011216;
+    height: 120px;
+    font-size: 13px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
+
+.image-footer{
+
+    object-fit: cover;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    
+}
+
 
 
 
@@ -195,18 +214,35 @@ body{
 
 /* diseño responsive*/
 @media screen and (max-width: 768px) {
-    .header h1 {
-        font-size: 1.5rem; /* Reduzco el tamaño del texto en pantallas pequeñas */
+    .main-title {
+        font-size: 24px;
+    }
+    
+    .titulo, .titulo-secundario {
+        font-size: 24px;
     }
 
-    .profile-image img {
-        width: 100px;
-        height: 100px;
+    .text-framework {
+        font-size: 14px;
+        line-height: 20px;
     }
 
-    .lista li {
-        font-size: 1rem; /* Reduzco el tamaño del texto en pantallas pequeñas */
+    .number-item {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .image-footer {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-foundation, .icon-bootstrap, .icon-tailwind, .icon-bulma, .icon-materialize {
+        width: 80px;
+        height: 80px;
     }
 }
-
-/* Animaciones */
